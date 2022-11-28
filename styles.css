@@ -1,0 +1,182 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body {
+	
+	background: url(images/mainbeckground.jpg);
+	background-size: cover;
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+
+header {
+	
+	text-align: center;
+	width: 100%;
+	height: auto;
+	position: center;
+	overflow: hidden;
+	background: url(images/mainbeckground.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	
+}
+header .overlay{
+	width: 100%;
+	padding: 50px;
+	color: #FFF;
+	
+}
+
+h1 {
+	font-family: 'zetetic', sans-serif;
+	font-size: 80px;
+	margin-bottom: 30px;
+	text-shadow: 2px 2px #01F6FA;
+	letter-spacing: 3px;
+	
+}
+
+h2 {
+	font-family: 'Coutline', sans-serif;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	margin-bottom: 30px;
+	margin-left: 400px;
+	margin-right: 400px;
+	background: black;
+	padding: 25px;
+	animation: color-change 3s infinite;
+	border-radius: 50%;
+	letter-spacing: 1px;
+   
+}
+
+@keyframes color-change {
+   0% { color: red; }
+   20% { color: green; }
+   40% { color: blue; }
+   60% { color: #FA01FA; }
+   80% { color: yellow; }
+   100% { color: red; }
+}
+
+
+h4	{
+	font-family: "Carmela", sans-serif;
+	text-align: left;
+	color: white;
+
+}
+
+.aboutheb{
+	font-family: "Carmela", sans-serif;
+	text-align: right;
+	
+	color: white;
+
+}
+
+
+
+
+.logo-facebook {
+	text-align: center;
+
+}
+
+.logo-home{
+	position: absolute;
+	top: 0;
+    left: 5px;
+	
+}
+  
+.logo-instagram {
+	text-align: center;
+}
+
+.logo-mail{
+	text-align: center;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  left: 600px;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -40px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+ 
+}
+
+.column img {
+  margin-top: ;
+  vertical-align: middle;
+}
+
+.myselfeng{
+	margin-right: 20px;
+	
+	
+}
+
+.myselfheb{
+	margin-left: 20px;
+	
+}
+
+.formore{
+	text-align: center;
+	color: white;
+	
+}
