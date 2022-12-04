@@ -1,0 +1,315 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(images/mainbeckground.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* header */
+header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #527D87;
+}
+.overlay{
+	width: 100%;
+	padding: 0;
+	color: #FFF;
+}
+
+h1 {
+	font-family: 'Arial', sans-serif;
+	font-size: 135px;
+	margin-top: 0;
+	margin-bottom: 5px;
+	text-shadow: 2px 2px #01F6FA;
+	letter-spacing: 3px;
+	text-align: center;
+	
+}
+
+h2 {
+	font-family: 'Arial', sans-serif;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	text-align: center;
+	animation: color-change 3s infinite;
+	letter-spacing: 1px;
+	font-size: 70px;
+	margin-top: 10px;
+	
+   
+}
+
+@keyframes color-change {
+   0% { color: red; }
+   20% { color: green; }
+   40% { color: blue; }
+   60% { color: #FA01FA; }
+   80% { color: yellow; }
+   100% { color: red; }
+}
+.abouteng{
+	font-family: "Carmela", sans-serif;
+	text-align: left;
+	color: white;
+	padding-left: 3px;
+	padding-right: 3px;
+	
+	
+}
+
+
+.brand {
+  width: auto;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 5%;
+  color: #fff;
+ 
+}
+/* Navigation */
+.menu {
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+.menu ul {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.menu ul a {
+  width: 20%;
+  height: inherit;
+  color: #fff;
+  display: inline-block;
+}
+.menu ul a:hover {
+  background-color: #222;
+  color: #fff;
+}
+#menuToggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+/* navigation < 768px*/
+@media screen and (max-width: 768px) {
+  .menu {
+      width: 100%;
+      height: auto;
+  }
+  .menu ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.3s;
+      -moz-transition: max-height 0.3s;
+      -ms-transition: max-height 0.3s;
+      -o-transition: max-height 0.3s;
+      transition: max-height 0.3s;
+  }
+  .menu ul a {
+      text-align: left;
+      width: 100%;
+      height: 50px;
+      background-color: black;
+      padding: 10px 0px 10px 5%;
+      border-bottom:1px solid #ddd;
+  }
+  .menu-icon {
+      width: 100px;
+      height: inherit;
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      line-height: 60px;
+  }
+  #menuToggle:checked ~ ul {
+      max-height: 350px;
+  }
+  .menu-icon i {
+      font-size: 1.7em;
+      color:#fff;
+  }
+}
+
+.indexmyself {
+	
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+    height: auto;
+	max-width: 150px;
+	padding-bottom: 3px;
+	margin-top: 20px;
+}
+
+.gallery {
+  /* (B1) GRID LAYOUT - 3 IMAGES PER ROW */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+ 
+  /* (B2) OPTIONAL WIDTH RESTRICT */
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* (C) GALLERY IMAGES */
+.gallery img {
+  /* (C1) DIMENSION */
+  width: 100%;
+ 
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+ 
+ 
+ 
+  /* (C3) IMAGE RESIZE */
+  /* cover | contain | fill | scale-down */
+  object-fit: contain;
+  position: relative;
+}
+
+/* (D) ON SMALL SCREENS - 2 IMAGES PER ROW */
+@media only screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* (E) OPTIONAL ZOOM ON HOVER */
+.gallery img:hover {
+  z-index: 9;
+  transform: scale(1.3);
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  transition: transform ease 0.5s;
+}
+
+.formore{
+	 text-align: left;
+	 color: white;
+	 position: relative;
+     bottom: 0;
+     left: 0;
+	 padding-bottom: 10px;
+	 padding-left: 10px;
+}
+
+.logos{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+ 	
+}
+
+.logo-facebook {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+
+
+}
+
+.logo-instagram {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+
+.logo-mail{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
